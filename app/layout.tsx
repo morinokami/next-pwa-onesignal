@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import OneSignal from "./one-signal";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -53,6 +54,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <OneSignal />
       <body className={inter.className}>{children}</body>
     </html>
   );
